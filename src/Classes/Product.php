@@ -3,9 +3,13 @@
 namespace App\Classes;
 
 use App\Classes\Brand;
+use App\Interfaces\ProductInterface;
+use App\Traits\ProductResponse;
 
-class Product 
+class Product implements ProductInterface
 {
+    use ProductResponse;
+
     public string $name;
     public float $price;
     public int $quantity;
@@ -25,6 +29,7 @@ class Product
         $infos .= "valor do produto: {$this->price}<br>";
         $infos .= "quantidade do produto: {$this->quantity}<br>";
         $infos .= "marca do produto: {$this->brand->name}<br>";
+        $this->getName();
 
         return $infos;
     }

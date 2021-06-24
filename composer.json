@@ -1,0 +1,15 @@
+{
+    "name": "pc-gamer/php",
+    "autoload": {
+        "psr-4": {
+            "PcGamer\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SxTI",
+            "email": "caique_rechi@hotmail.com"
+        }
+    ],
+    "require": {}
+}

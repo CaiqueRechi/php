@@ -4,7 +4,6 @@ namespace App\Classes;
 
 Class Office
 {
-
     public string $cnpj;
     public string $name;
     public string $zip;
