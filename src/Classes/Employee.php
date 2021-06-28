@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Classes;
+use App\Classes\Role;
+use App\Classes\Office_;
 
 Class Employee
 

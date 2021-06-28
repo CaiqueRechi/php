@@ -1,17 +1,18 @@
 <?php
 
 namespace App\Classes;
+use App\Classes\Employee;
 
 Class Transport
 {
-    public int $cargo_id;
-    public Employee $employee_id;
-    public int $cargo_capacity;
+    public int $id;
+    public Employee $employee;
+    public int $capacity;
 
-    public function __construct(int $cargo_id, int $employee_id, $cargo_capacity)
+    public function __construct(int $id, Employee $employee,int $capacity)
     {
-        $this->cargo_id = $cargo_id;
-        $this->employee_id = $employee_id;
+        $this->id = $id;
+        $this->employee = $Employee;
         $this->cargo_capacity = $cargo_capacity;     
     }
 }

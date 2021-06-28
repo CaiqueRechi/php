@@ -2,6 +2,8 @@
 
 namespace App\Classes;
 
+use App\Classes\Office;
+
 Class Section
 {
     public int $section_id;
